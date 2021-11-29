@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>404</title>
+  </head>
+
+  <body id=errorp_body>
+    <header>
+      <nav class="navbar">
+        <a href = "#" class = "logo">Logo</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+      </nav>
+    </header>
+    <section>
+        <img src="css/sources/stars.png" id="stars"> 
+        <img class="rocket" src="css/sources/Rocket.svg">
+        
+        <main class="main" id="main">
+            <h3>404</h3>
+            <p id=errorp_p>
+            OOPS, LOOKS LIKE YOU ARE LOST IN SPACE!
+            </p> 
+      </main>
+      <a href="#main" id="errorp_btn">GO BACK HOME</a>
+    </section>
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    $("#stars").css({
+      width: (100 + scroll/10) + "%",
+      height: (100 + scroll/10) + "%"
+    });
+  })
+    </script>
+  </body>
+</html>
