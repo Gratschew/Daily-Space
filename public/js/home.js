@@ -17,7 +17,6 @@ const setData = data => {
     let imageElement = document.createElement('img');
     imageElement.src = data["url"];
     imageElement.id = ("wrapper-image");
-    console.log(imageElement.src);
     element.parentNode.replaceChild(imageElement, element);
   }
   else{
@@ -108,7 +107,6 @@ function isValidDate(d) {
       formattedDate = formatDate(dateEntered);
       try{
       const dataForDate = await getJSON('/api/spacephoto/'+formattedDate);
-      console.log(dataForDate);
       setData(dataForDate);
     } catch(e) {
       document.getElementById('spaceContent').innerHTML = 
