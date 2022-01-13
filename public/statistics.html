@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Statistics</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href = "/home" class = "logo">Daily Space</a>
+        <ul class="nav-links">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/statistics" class = "active">Statistics</a></li>
+          <li><a href="/about" >About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <img src="css/sources/stars.png" id="stars"> 
+      <img class="rocket" src="css/sources/Rocket.svg">
+
+      <main class="main" id="main">
+        <h3 id='statisticscaption'>There are currently ... people in space!</h3>
+        <table id = statisticstable>
+          <thead>
+            <tr>
+              <th id=thName onclick="sortTable(0)">Name</th>
+              <th id = thCraft onclick="sortTable(1)">Craft</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <template id="product-info-template">
+          <div  id="product-info">
+            <td class="name"></td>
+            <td class="craft"></td>
+          </div>
+        </template>
+      </main>
+
+    </section>
+    
+
+    <footer>
+      <p>Max Gratschew</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src ="js/statistics.js"></script>
+  </body>
+
+      
+
+</html>

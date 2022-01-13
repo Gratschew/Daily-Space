@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gratschew/Space/issues"
   },
-  "homepage": "https://github.com/Gratschew/Space#readme"
+  "homepage": "https://github.com/Gratschew/Space#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.6"
+  }
 }

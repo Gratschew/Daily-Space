@@ -11,56 +11,31 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href = "home.html" class = "logo">Logo</a>
+        <a href = "/home" class = "logo">Daily Space</a>
         <ul class="nav-links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/statistics">Statistics</a></li>
+          <li><a href="/about" class="active">About</a></li>
         </ul>
       </nav>
     </header>
     <section>
       <img src="css/sources/stars.png" id="stars"> 
-
       <main class="main" id="main">
-        <h2>Daily space</h2>
-        <p>div has no meaning… main has the meaning that it is the main part of the page… 
-          it is easy for search engines to understand what the main content of your page is… 
-          the same with section, article, etc, they all have meaning, what is called semantics.
-          Get fluency suggestions for proper grammar, clear phrasing, natural word choice, and more. Try now!
-          <br><br>div has no meaning… main has the meaning that it is the main part of the page… 
-          it is easy for search engines to understand what the main content of your page is… 
-          the same with section, article, etc, they all have meaning, what is called semantics.
-          Get fluency suggestions for proper grammar, clear phrasing, natural word choice, and more. Try now!<br><br>div has no meaning… main has the meaning that it is the main part of the page… 
-          it is easy for search engines to understand what the main content of your page is… 
-          the same with section, article, etc, they all have meaning, what is called semantics.
-          Get fluency suggestions for proper grammar, clear phrasing, natural word choice, and more. Try now!<br><br>div has no meaning… main has the meaning that it is the main part of the page… 
-          it is easy for search engines to understand what the main content of your page is… 
-          the same with section, article, etc, they all have meaning, what is called semantics.
-          Get fluency suggestions for proper grammar, clear phrasing, natural word choice, and more. Try now!<br><br>div has no meaning… main has the meaning that it is the main part of the page… 
-          it is easy for search engines to understand what the main content of your page is… 
-          the same with section, article, etc, they all have meaning, what is called semantics.
-          Get fluency suggestions for proper grammar, clear phrasing, natural word choice, and more. Try now!<br><br>div has no meaning… main has the meaning that it is the main part of the page… 
-          it is easy for search engines to understand what the main content of your page is… 
-          the same with section, article, etc, they all have meaning, what is called semantics.
-          Get fluency suggestions for proper grammar, clear phrasing, natural word choice, and more. Try now!
+        <div id=aboutdiv>
+          <p id="abouttext">Daily Space was created as a personal project to display daily (and historic) astronomy pictures and statistics of how many humans are currently in space. 
+          The application was created using <br>
+           NASA's API - <a href='https://api.nasa.gov/planetary/apod'>Astronomy picture of the Day</a><br> 
+           Open Notify's API - <a href='http://open-notify.org/Open-Notify-API/People-In-Space/'>How Many People Are In Space Right Now</a>
         </p>
+      </div>
       </main>
-
     </section>
-    
-
     <footer>
-      <p>Max Gratschew &copy; 2021</p>
+      <p>Max Gratschew</p>
     </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $("#stars").css({
-      width: (100 + scroll/10) + "%",
-      height: (100 + scroll/10) + "%"
-    });
-  })
-    </script>
+    <script src="js/about.js"></script>
   </body>
 </html>
