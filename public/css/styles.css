@@ -249,6 +249,12 @@ main p
   height:auto;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  .spaceContent img{
+    width:50%;
+    height:auto;
+  }
+}
 
 iframe{
  aspect-ratio: 2 / 1;
