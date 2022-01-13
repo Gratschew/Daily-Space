@@ -1,7 +1,7 @@
 const http = require('http');
 const { handleRequest } = require('./handleRequest');
 
-const PORT = process.env || 3000;
+const PORT = process.env.PORT || 3000;
 const server = http.createServer(handleRequest);
 
 server.on('error', err => {
