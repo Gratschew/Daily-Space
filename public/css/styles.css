@@ -255,6 +255,12 @@ main p
     height:auto;
   }
 }
+@-moz-document url-prefix() {
+  .spaceContent img{
+    width:350%;
+    height:auto;
+  }
+}
 
 iframe{
  aspect-ratio: 2 / 1;
