@@ -32,6 +32,10 @@ const handleRequest = async(request, response) => {
     if (filePath === '/about'){
       fileName = 'about.html';
     }
+    if (filePath ==='/favicon.ico'){
+      console.log('hep');
+      fileName = 'favicon.ico'
+    }
     return renderPublic(fileName, response);
   }
 

@@ -62,6 +62,9 @@ const getContentType = fileExtension => {
     case 'wav':
       contentType = 'audio/wav';
       break;
+    case 'ico':
+      contentType = 'image/x-icon'
+      break;
     default:
       contentType = 'text/html';
   }
