@@ -5,4 +5,4 @@ Daily Space is my personal project to display daily and historic astronomy pictu
 - NASA's API - Astronomy picture of the DayOpen 
 - Notify's API - How Many People Are In Space Right Now
 
-The app is written in HTML5/CSS3/JavaScript/Node.js and a few lines of jQuery.
+The web app is written in HTML5/CSS3/JavaScript/Node.js and a few lines of jQuery.
